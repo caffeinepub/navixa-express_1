@@ -1,0 +1,78 @@
+{
+  "kind": "build_request",
+  "title": "Remove payment options section from booking flow",
+  "projectName": "Navixa Express",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-16",
+      "text": "Remove the PaymentSection component from BookingModal. After successful booking form submission, close the modal immediately and trigger WhatsApp redirect without showing any payment UI.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-latest"
+        ],
+        "quotes": [
+          "Yes Remove Payment  Options on this site"
+        ]
+      },
+      "acceptanceCriteria": [
+        "PaymentSection component is not rendered in BookingModal",
+        "After booking form submission, the modal closes immediately",
+        "WhatsApp redirect happens directly after successful booking submission",
+        "No UPI or QR code payment options are displayed anywhere in the booking flow"
+      ]
+    },
+    {
+      "id": "REQ-17",
+      "text": "Remove the PaymentSection.tsx component file from frontend/src/components since it is no longer used in the application.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-latest"
+        ],
+        "quotes": [
+          "Yes Remove Payment  Options on this site"
+        ]
+      },
+      "acceptanceCriteria": [
+        "PaymentSection.tsx file is removed from the codebase",
+        "No imports or references to PaymentSection remain in other components"
+      ]
+    },
+    {
+      "id": "REQ-18",
+      "text": "Update the BookingModal component to immediately redirect to WhatsApp after successful booking submission with the pre-filled message: 'Hello Navixa Express, I want to book a shipment. My booking details are submitted on the website.' No payment confirmation step should occur.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-latest"
+        ],
+        "quotes": [
+          "Yes Remove Payment  Options on this site"
+        ]
+      },
+      "acceptanceCriteria": [
+        "WhatsApp redirect occurs immediately after successful booking",
+        "Pre-filled message is correctly formatted with booking confirmation text",
+        "WhatsApp number 8530661581 is used for the redirect",
+        "User does not see any intermediate payment screens"
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify the backend schema or booking data storage",
+    "Preserve the existing booking form fields and validation logic",
+    "Maintain WhatsApp integration functionality with the same phone number and message format"
+  ],
+  "nonGoals": [
+    "Adding alternative payment methods",
+    "Modifying the booking form structure or fields",
+    "Changing the Track Shipment functionality",
+    "Altering the hero section, about section, or contact section"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

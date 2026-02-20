@@ -1,0 +1,208 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 7,
+  "summary": "Professional courier & logistics booking website for Navixa Express with shipment booking, tracking, and WhatsApp integration (payment options removed)",
+  "architectural_notes": [
+    "Booking form must open as popup/modal, not shown by default",
+    "WhatsApp redirect happens post-booking with pre-filled message template",
+    "Blue & orange color scheme with modern professional UI",
+    "Mobile-first responsive design approach",
+    "Payment options removed from booking flow - proceed directly to WhatsApp after booking submission"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-homepage-with-hero-section-displaying-company-name-navixa-express-tagline-about-courier-logistics-services-and-three-primary-cta-buttons-book-shipment-track-shipment-and-contact-on-whatsapp-do-not-display-the-booking-form-by-default",
+      "title": "Create homepage with hero section displaying company name 'Navixa Express', tagline about courier & logistics services, and three primary CTA buttons: 'Book Shipment', 'Track Shipment', and 'Contact on WhatsApp'. Do NOT display the booking form by default.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-shipment-booking-form-that-opens-as-a-modal-popup-when-book-shipment-button-is-clicked-form-must-include-sender-details-full-name-mobile-number-pickup-address-city-state-pincode-receiver-details-full-name-mobile-number-delivery-address-city-state-pincode-and-shipment-details-package-weight-dimensions-as-optional-payment-type-dropdown-with-prepaid-cod-options",
+      "title": "Implement shipment booking form that opens as a modal popup when 'Book Shipment' button is clicked. Form must include sender details (Full Name, Mobile Number, Pickup Address, City, State, Pincode), receiver details (Full Name, Mobile Number, Delivery Address, City, State, Pincode), and shipment details (Package Weight, Dimensions as optional, Payment Type dropdown with Prepaid/COD options).",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-pincode-availability-check-functionality-within-the-booking-form-that-validates-both-pickup-pincode-and-delivery-pincode-display-serviceable-or-not-serviceable-status-for-each-pincode-include-explanatory-text-stating-courier-availability-is-area-wise-based-on-delivery-partners-this-check-must-complete-successfully-before-allowing-final-booking-submission",
+      "title": "Add pincode availability check functionality within the booking form that validates both pickup pincode and delivery pincode. Display 'Serviceable' or 'Not Serviceable' status for each pincode. Include explanatory text stating 'Courier availability is area-wise based on delivery partners'. This check must complete successfully before allowing final booking submission.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-after-booking-form-submission-hide-the-booking-form-and-display-payment-options-section-with-upi-payment-and-qr-code-payment-options-include-text-note-after-payment-please-share-the-screenshot-on-whatsapp-payment-section-must-not-appear-before-booking-form-submission",
+      "title": "After booking form submission, hide the booking form and display payment options section with UPI Payment and QR Code Payment options. Include text note: 'After payment, please share the screenshot on WhatsApp'. Payment section must NOT appear before booking form submission.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-after-booking-submission-and-payment-section-display-automatically-redirect-user-to-whatsapp-at-number-8530661581-with-pre-filled-message-hello-navixa-express-i-want-to-book-a-shipment-my-booking-details-are-submitted-on-the-website",
+      "title": "After booking submission and payment section display, automatically redirect user to WhatsApp at number 8530661581 with pre-filled message: 'Hello Navixa Express, I want to book a shipment. My booking details are submitted on the website.'",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-track-shipment-functionality-that-allows-users-to-search-and-view-shipment-status-by-entering-their-booking-id-display-booking-details-and-current-status-when-found",
+      "title": "Create Track Shipment functionality that allows users to search and view shipment status by entering their booking ID. Display booking details and current status when found.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-about-section-to-homepage-with-content-navixa-express-supports-small-businesses-and-ecommerce-sellers-we-have-successfully-helped-50-happy-customers-fast-reliable-and-transparent-courier-services",
+      "title": "Add About section to homepage with content: 'Navixa Express supports small businesses and eCommerce sellers. We have successfully helped 50+ happy customers. Fast, reliable, and transparent courier services.'",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-contact-details-section-displaying-phone-9518715580-whatsapp-8530661581-email-navixaexpress-gmail-com-and-address-dehu-pune-maharashtra-412109-make-phone-whatsapp-and-email-clickable-links",
+      "title": "Create Contact Details section displaying Phone: 9518715580, WhatsApp: 8530661581, Email: navixaexpress@gmail.com, and Address: Dehu, Pune, Maharashtra – 412109. Make phone, WhatsApp, and email clickable links.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-contact-on-whatsapp-button-that-redirects-to-whatsapp-number-8530661581-with-a-general-contact-message",
+      "title": "Implement 'Contact on WhatsApp' button that redirects to WhatsApp number 8530661581 with a general contact message.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-blue-and-orange-color-theme-throughout-the-website-with-modern-and-professional-ui-design-ensure-all-cta-buttons-headings-and-key-elements-use-this-color-scheme-consistently-design-must-be-mobile-friendly-and-responsive-across-all-screen-sizes",
+      "title": "Apply blue and orange color theme throughout the website with modern and professional UI design. Ensure all CTA buttons, headings, and key elements use this color scheme consistently. Design must be mobile-friendly and responsive across all screen sizes.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-pincode-availability-check-functionality-from-the-booking-form-remove-the-pincodecheck-component-usage-for-both-pickup-pincode-and-delivery-pincode-fields",
+      "title": "Remove the pincode availability check functionality from the booking form. Remove the PincodeCheck component usage for both pickup pincode and delivery pincode fields.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-usequeries-hook-that-handles-pincode-availability-checking-via-react-query-since-this-functionality-is-no-longer-needed",
+      "title": "Remove the useQueries hook that handles pincode availability checking via React Query since this functionality is no longer needed.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-pincode-validation-state-management-from-usebookingform-hook-since-pincode-checks-are-no-longer-performed",
+      "title": "Remove pincode validation state management from useBookingForm hook since pincode checks are no longer performed.",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-paymentsection-component-from-bookingmodal-after-successful-booking-form-submission-close-the-modal-immediately-and-trigger-whatsapp-redirect-without-showing-any-payment-ui",
+      "title": "Remove the PaymentSection component from BookingModal. After successful booking form submission, close the modal immediately and trigger WhatsApp redirect without showing any payment UI.",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-paymentsection-tsx-component-file-from-frontend-src-components-since-it-is-no-longer-used-in-the-application",
+      "title": "Remove the PaymentSection.tsx component file from frontend/src/components since it is no longer used in the application.",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-bookingmodal-component-to-immediately-redirect-to-whatsapp-after-successful-booking-submission-with-the-pre-filled-message-hello-navixa-express-i-want-to-book-a-shipment-my-booking-details-are-submitted-on-the-website-no-payment-confirmation-step-should-occur",
+      "title": "Update the BookingModal component to immediately redirect to WhatsApp after successful booking submission with the pre-filled message: 'Hello Navixa Express, I want to book a shipment. My booking details are submitted on the website.' No payment confirmation step should occur.",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Shipment booking form (popup/dynamic) with sender/receiver details and package info",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "WhatsApp auto-redirect after booking with pre-filled message to 8530661581",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Track Shipment functionality",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "About section with company information and customer success stats",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Contact details section with phone, WhatsApp, email, and address",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Mobile-friendly responsive design with blue & orange theme",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-12",
+      "summary": "Store submitted shipment booking data in backend including all sender details, receiver details, shipment details, pincode validation results, and timestamp. Generate a unique booking ID for each submission.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-14",
+      "summary": "Remove the checkPincodeAvailability function from the backend main.mo actor since pincode validation is no longer required.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-15",
+      "summary": "Remove payment options section (UPI/QR code) from the booking flow",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Navixa Express",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

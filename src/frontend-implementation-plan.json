@@ -1,0 +1,56 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Remove payment options section from booking flow",
+  "requirements": [
+    {
+      "id": "REQ-16",
+      "summary": "Remove PaymentSection component from BookingModal and implement immediate WhatsApp redirect after booking submission",
+      "acceptanceCriteria": [
+        "PaymentSection component is not rendered in BookingModal",
+        "After booking form submission, the modal closes immediately",
+        "WhatsApp redirect happens directly after successful booking submission",
+        "No UPI or QR code payment options are displayed anywhere in the booking flow"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/BookingModal.tsx",
+          "operation": "modify",
+          "description": "Remove PaymentSection component import and rendering. After successful booking form submission via useBookingForm hook, immediately close the modal and trigger WhatsApp redirect with pre-filled message 'Hello Navixa Express, I want to book a shipment. My booking details are submitted on the website.' to phone number 8530661581. Remove all state management related to showing payment UI. Ensure the modal closes immediately upon successful booking without displaying any payment confirmation step."
+        }
+      ]
+    },
+    {
+      "id": "REQ-17",
+      "summary": "Delete the PaymentSection.tsx component file from the codebase",
+      "acceptanceCriteria": [
+        "PaymentSection.tsx file is removed from the codebase",
+        "No imports or references to PaymentSection remain in other components"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/PaymentSection.tsx",
+          "operation": "delete",
+          "description": "Delete the PaymentSection.tsx file as it is no longer used in the application after removing payment options from the booking flow."
+        }
+      ]
+    },
+    {
+      "id": "REQ-18",
+      "summary": "Ensure WhatsApp redirect implementation uses correct message format and phone number",
+      "acceptanceCriteria": [
+        "WhatsApp redirect occurs immediately after successful booking",
+        "Pre-filled message is correctly formatted with booking confirmation text",
+        "WhatsApp number 8530661581 is used for the redirect",
+        "User does not see any intermediate payment screens"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/BookingModal.tsx",
+          "operation": "modify",
+          "description": "Verify and update the WhatsApp redirect logic to use the exact message format: 'Hello Navixa Express, I want to book a shipment. My booking details are submitted on the website.' and phone number 8530661581. Ensure the redirect happens immediately after the booking submission success callback without any intermediate UI or delays."
+        }
+      ]
+    }
+  ]
+}

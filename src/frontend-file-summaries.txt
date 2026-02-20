@@ -1,0 +1,16 @@
+{
+  "frontend/src/App.tsx": "Main application component that manages modal states for booking and tracking, and renders the hero section, about section, contact section, and footer with proper event handlers.",
+  "frontend/src/components/HeroSection.tsx": "Hero section component displaying the Navixa Express branding, tagline, three CTA buttons (Book Shipment, Track Shipment, Contact on WhatsApp), and feature highlights with blue and orange gradient background.",
+  "frontend/src/components/AboutSection.tsx": "About section component showcasing company information, 50+ happy customers achievement, and three key value propositions with icon cards.",
+  "frontend/src/components/ContactSection.tsx": "Contact section displaying clickable phone, WhatsApp, email, and address information in styled cards with appropriate icons.",
+  "frontend/src/components/BookingModal.tsx": "Modal component containing the complete shipment booking form with sender, receiver, and shipment details sections that immediately redirects to WhatsApp and closes after successful submission without displaying any payment options.",
+  "frontend/src/components/PincodeCheck.tsx": "Reusable component that checks pincode serviceability via backend API and displays real-time status with loading, success, and error states, now correctly using PincodeCheckResult type from backend.",
+  "frontend/src/components/PaymentSection.tsx": "Payment section component displayed after successful booking, showing booking confirmation, QR code for payment, and WhatsApp redirect button.",
+  "frontend/src/components/TrackShipmentModal.tsx": "Modal component for tracking shipments by booking ID, displaying complete booking details including sender, receiver, and shipment information.",
+  "frontend/src/components/Footer.tsx": "Footer component with copyright notice and attribution link to caffeine.ai with UTM tracking parameters.",
+  "frontend/src/hooks/useQueries.ts": "React Query hook for checking pincode availability via backend actor with caching and error handling.",
+  "frontend/src/hooks/useBookingForm.ts": "Custom hook managing booking form state, validation, and submission logic without pincode serviceability checks.",
+  "frontend/src/hooks/useTrackShipment.ts": "Custom hook for tracking shipments by booking ID with loading, error, and data states.",
+  "frontend/src/index.css": "Global styles with OKLCH color system customized for blue and orange theme, supporting both light and dark modes.",
+  "frontend/tailwind.config.js": "Tailwind configuration with custom blue and orange color palettes defined in OKLCH format for consistent theming throughout the application."
+}

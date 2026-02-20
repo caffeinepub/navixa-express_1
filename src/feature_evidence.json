@@ -1,0 +1,59 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-remove-the-paymentsection-component-from-bookingmodal-after-successful-booking-form-submission-close-the-modal-immediately-and-trigger-whatsapp-redirect-without-showing-any-payment-ui",
+      "featureTitle": "Remove the PaymentSection component from BookingModal. After successful booking form submission, close the modal immediately and trigger WhatsApp redirect without showing any payment UI.",
+      "files": [
+        "frontend/src/components/BookingModal.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-16"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-remove-the-paymentsection-tsx-component-file-from-frontend-src-components-since-it-is-no-longer-used-in-the-application",
+      "featureTitle": "Remove the PaymentSection.tsx component file from frontend/src/components since it is no longer used in the application.",
+      "files": [
+        "frontend/src/components/PaymentSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-17"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-the-bookingmodal-component-to-immediately-redirect-to-whatsapp-after-successful-booking-submission-with-the-pre-filled-message-hello-navixa-express-i-want-to-book-a-shipment-my-booking-details-are-submitted-on-the-website-no-payment-confirmation-step-should-occur",
+      "featureTitle": "Update the BookingModal component to immediately redirect to WhatsApp after successful booking submission with the pre-filled message: 'Hello Navixa Express, I want to book a shipment. My booking details are submitted on the website.' No payment confirmation step should occur.",
+      "files": [
+        "frontend/src/components/BookingModal.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-18"
+      ],
+      "confidence": "high"
+    }
+  ]
+}
